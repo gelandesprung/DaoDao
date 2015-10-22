@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">叨叨</string>
+    <string name="username_hint">用户名</string>
+    <string name="password_hint">密码</string>
+
+    <!--底部导航栏-->
+    <string name="message">消息</string>
+    <string name="contacts">联系人</string>
+    <string name="tools">工具箱</string>
+    <string name="userinfo">用户信息</string>
+    <string name="login">登陆</string>
+
+    <string name="friends">好友</string>
+    <string name="groups">群组</string>
+
+
+</resources>
