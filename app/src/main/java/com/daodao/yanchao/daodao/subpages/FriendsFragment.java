@@ -1,14 +1,17 @@
 package com.daodao.yanchao.daodao.subpages;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ListView;
 import android.widget.TextView;
 
 import com.daodao.yanchao.daodao.R;
+import com.daodao.yanchao.daodao.activities.ChatActiivty;
 import com.daodao.yanchao.daodao.subpages.adapter.FriendsListAdapter;
 import com.daodao.yanchao.daodao.subpages.data.FriendsBean;
 
@@ -43,6 +46,13 @@ public class FriendsFragment extends Fragment{
         super.onViewCreated(view, savedInstanceState);
         listView = (ListView) view.findViewById(R.id.friends_list);
         listView.setAdapter(adapter);
+        listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                Intent intent = new Intent(getActivity(), ChatActiivty.class);
+                startActivity(intent);
+            }
+        });
     }
 
     @Override

@@ -12,6 +12,7 @@
 
     <string name="friends">好友</string>
     <string name="groups">群组</string>
+    <string name="net_broken">网络未连接</string>
 
 
 </resources>

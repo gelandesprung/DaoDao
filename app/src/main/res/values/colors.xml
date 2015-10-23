@@ -7,4 +7,5 @@
     <color name="button_pressed">#428bca</color>
     <color name="button_normal">#03a9f4</color>
     <color name="gray">#EFEFEF</color>
+    <color name="error_trans">#FF4081</color>
 </resources>

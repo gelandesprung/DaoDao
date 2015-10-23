@@ -5,6 +5,14 @@
     android:layout_height="50dp"
     android:background="@color/actionbar_blue">
 
+    <ImageView
+        android:clickable="true"
+        android:id="@+id/back"
+        android:visibility="gone"
+        android:layout_alignParentLeft="true"
+        android:src="@mipmap/nv_back"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"/>
     <TextView
         android:id="@+id/title"
         android:layout_width="wrap_content"
