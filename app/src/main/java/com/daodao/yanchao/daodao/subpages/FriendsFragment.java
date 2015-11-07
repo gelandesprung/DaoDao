@@ -12,6 +12,7 @@ import android.widget.TextView;
 
 import com.daodao.yanchao.daodao.R;
 import com.daodao.yanchao.daodao.activities.ChatActiivty;
+import com.daodao.yanchao.daodao.smack.SmackManager;
 import com.daodao.yanchao.daodao.subpages.adapter.FriendsListAdapter;
 import com.daodao.yanchao.daodao.subpages.data.FriendsBean;
 
@@ -58,7 +59,9 @@ public class FriendsFragment extends Fragment{
     @Override
     public void onStart() {
         super.onStart();
-        test();
+//        test();
+        mDataList.addAll(SmackManager.getInstance().getFriendList());
+        adapter.notifyDataSetChanged();
     }
 
     private void test() {
